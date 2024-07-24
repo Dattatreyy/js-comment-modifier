@@ -6,7 +6,7 @@ def delete_comment_lines(input_file, output_file):
         lines = file.readlines()
 
         # Regular expressions to match the patterns
-        remove_pattern = re.compile(r'^//')
+        remove_pattern = re.compile(r'^// ')
         modify_pattern = re.compile(r'^////')
 
         # List to hold the processed lines
